@@ -1,0 +1,277 @@
+
+/*第三板块科技兴国的css*/
+#box_sci
+{
+    width: 100%;
+    height: 100vh;   
+    border: 0px solid blue;
+    background: url(../pic/back3.jpg) no-repeat;
+    background-size: 100% 100%;
+	position:relative;
+}
+.ul-1
+{
+	width: 100%;
+	/*height: 431px;*/
+	height:26.938rem;
+	position: relative;
+	list-style: none;
+	}/*一个元素在另外一个元素里面，将外元素设置为relative，内元素设置为absolute，内元素就能根据外元素进行定位*/
+
+.li-1
+{
+	width: 100%;
+	/*height: 431px;*/
+	height:26.938rem;
+	position: absolute;
+	list-style: none;
+	opacity: 0;
+	/*将不透明度设置为0，就是完全透明，就是看不见*/
+	transition: all .7s;
+}
+
+.li-1:nth-child(1)
+{
+	background:url(../pic/辽宁号_3.jpg) no-repeat;
+	background-size: 100%
+}
+
+.li-1:nth-child(2)
+{
+	background:url(../pic/神威.太湖之光_3.jpg) no-repeat;
+	background-size: 120%
+}
+
+.li-1:nth-child(3)
+{
+	background:url(../pic/c919.jpg) no-repeat;
+	background-size: 120%
+}
+
+.button_big
+{
+	/*width: 40px;*/
+	width:1.6rem;
+	/*height: 80px;*/
+	height:3rem;
+	/*font-size: 30px;*/
+	font-size:1.4rem;
+	position: absolute;
+	/*top: 230.5px;*/
+	top:14.406rem;
+	border: 0;
+	z-index:999;
+	color: rgb(255, 255, 255); 
+    cursor: pointer;
+    font-family: 宋体;
+    display: block;
+    opacity: 0.5;
+    transition: all 1s ease 0s;
+    background: rgba(0, 0, 0, 0.2);
+    /*a:不透明度*/
+}
+
+.button_big:hover
+{
+	background:#8E8E8E;
+	opacity:0.5;
+}
+
+#btn-pre
+{ 
+	float:left;
+   /* margin-top:2px;
+   margin-top:0.125rem;*/
+    border:0;
+	position:absolute;
+	top:38%;
+	z-index:999;
+	cursor:pointer;
+}
+
+#btn-next
+{	
+	/*margin-left:460px;*/
+	right:0;
+	border:0;
+	position:absolute;
+	top:38%;
+	cursor:pointer;
+	z-index:999;
+	
+}
+
+.li-1.active
+{
+	z-index: 888;
+	opacity:1;
+}
+
+/*三个圆圈*/
+#ul-2
+{
+	position: absolute;
+	/*margin-top:-118px;
+    margin-left:420px;
+    margin-top:-142rem;
+    margin-left:25rem;*/
+	bottom:6.5vh;
+	right:26px;
+	z-index: 1000;
+	list-style: none;	
+}
+
+.circle
+{
+	/*width: 6px;
+	height: 6px;
+	margin-left: 11px;*/
+	width: 0.700rem;
+	height: 0.700rem;
+	margin-left: 0.788rem;
+	float: left;
+	/*border: 2px solid #d2c7da;*/
+	border: 0.125rem solid #d2c7da;
+	border-radius: 100%;
+	background:#8F8F8F;
+	cursor: pointer;
+	transition: all 1s ease 0s;
+	opacity: 0.65;
+	cursor:pointer;
+}
+
+.circle:hover
+{
+	background: white;
+}
+
+.circle.styles
+{
+	background: white;
+}
+.top
+{
+	display:inline-block;
+}
+
+#top_left /*艺术字*/
+{
+	/*margin:33px 5px;*/
+	margin:8vh 0px 0px 5vw;
+	float: left;
+	/*z-index: 10;*/
+	/*width:550px;
+	height:420px;*/
+	width:45vw;
+	height:30vh;
+	/*height:401px;*/
+	border: 0px solid blue;
+	background:url(../pic/back3_logo.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#top_mid /*轮播图*/
+{
+	/*display:none;
+	transition: all 2s;*/
+	
+	/*margin:315px 0px 0px -700px; float:left;*/
+	position:absolute;; float:left;
+	/*right:40vw;*/
+	bottom:7vh; left:-10vw;
+	width:40vw;
+	height:48vh;
+	/*height:328px; 334*/
+	/*width:520px; 500*/
+	border: 0px solid red;
+	overflow:hidden;
+	/*animation: left_mid 2s linear 0s;*/
+	
+}
+/*移动代码
+.mov{ /*animation: left_mid 2s linear 0s; }
+@keyframes left_mid 
+{
+    0%{
+    	margin-left: -700px;
+    }
+    100%{
+    	margin-left:-525px;
+    }
+}*/
+
+.back3_form{ 
+	/*float:right;
+	width:610px;
+	
+	height:495px; */
+	width:45vw;
+	height:76vh;
+	/*right:-50px; */
+	/*top:145px; */
+	background-color: rgba(255,255,255,0.8); right:	-10vw; bottom: 7vh;
+	position:absolute;
+ }
+.back3_form1{ 
+	width:100%; 
+	height:33.3%; 
+	border-bottom:#DADADA solid 1px;
+	z-index:9999;
+}
+.back3_form1:hover{ 
+	background-color:#DDD9FF;
+}
+.back3_form1_pic{ 
+	float:left;
+	margin-left:15px; 
+	margin-top:27.5px;
+	width:24%;
+	height:67%;
+}
+.back3_form1_font{ 
+	width:65%; 
+	height:100%; 
+	float:right; 	
+	color:#464646; 
+	margin-top:1.5%; 
+	margin-right:3%;
+}
+.back3_form2_font{
+	 width:65%; 
+	height:100%; 
+	 float:right;  
+	 /*font-size:15px;*/
+	 color:#464646; 
+	margin-top:0%; 
+	margin-right:3%;
+}
+.back3_form3_font{ 
+	width:65%; 
+	height:100%;  
+	float:right; 
+	/*font-size:15px; */
+	color:#464646;
+	margin-top:0%; 
+	margin-right:3%;
+}
+
+.back3_form h3{
+	/*font-size:24px;
+	margin-top:19px; 
+	font-size:1.7rem;
+	margin-bottom:10px; 
+	*/
+	font-size:1.2rem;
+	margin-bottom:3%;
+	margin-top:4%;
+	display:inline-block; 
+	
+	
+}
+.back3_form p{
+	font-size:0.7rem;
+	line-height:1.2rem;
+	/*font-size:1rem; 
+	font-size:16px; 
+	line-height:24px;*/
+}

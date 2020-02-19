@@ -1,0 +1,99 @@
+
+/*第五板块联系我们的css*/
+.back5{
+	width:100%;
+	height:100vh;  
+	background:url(../pic/back5.jpg) no-repeat;
+	background-size: 100% 100%; 
+	position:relative;
+	background-attachment:fixed; 
+}
+
+.inp1
+{
+	position: absolute; 
+	left:35.3%; 
+	top:15%; 
+	width:29.4vw;
+	height:78vh;
+		
+}
+
+.inp1_contact{ /*联系我们字体*/
+	background:url(../pic/contact.png) no-repeat; 
+	background-size:100% 100%; 
+	width:63%; 
+	height:20%; 
+	margin:0 auto;
+}
+
+.container1 /*输入框*/
+{   
+	position: absolute; top:22%;
+	left:-1.2vw;
+	height:70vh;
+	width:31.5vw; 
+}
+
+.text
+{
+    border:0px solid red;
+	width:31.5vw;
+	overflow:hidden;
+}
+
+.form-group
+{
+	margin-bottom: 1.5vh;
+	overflow: hidden;
+}
+
+.input-group-addon
+{
+	background-color:white;
+}
+
+.form-control
+{
+	border-left-color: #d3959b;
+}
+
+.t-area
+{
+	width:31.5vw;
+	height: 20vh;
+	border-top-style: none;
+}
+
+#form-control_4
+{
+	background-color: white;
+}
+
+#form-control_5
+{
+	font-family:FangSong_GB2312;
+	font-size:1.2vw;
+	background-color: #55acee;
+	border-style: none;
+	color:white;
+}
+
+#input-group_5
+{
+	transform:all 0s;
+	border-radius: 3px;
+    padding: 0.5vh 0.5vh;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    background-color: #4bc0c8;
+    box-shadow: 0px 0.8vh 0px 0px #3C93D5;
+}
+
+#input-group_5:active {
+    transform: translate(0px, 1vh);
+    -webkit-transform: translate(0px, 1vh);
+    box-shadow: 0px 0.2vh 0px 0px #4bc0c8;
+}

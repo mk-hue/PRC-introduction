@@ -1,0 +1,276 @@
+@charset "utf-8";
+/*第二板块国家战略与第二页面新闻的css*/
+
+/*第二板块国家战略开始*/
+#back2{ 
+	width:100%; 
+	height:100vh; 
+	background:url(../pic/back2.jpg) no-repeat; 
+	background-size: 100% 100%; 
+	background-attachment:fixed; 
+	position:relative; 
+}
+.art1{ 
+	width:100%;
+	height:100%; 
+}
+.art1_div{ /*艺术字外面的div*/
+	position:relative;
+	overflow: hidden;
+	left:31%;
+	top:4%;
+	width:37vw;
+	height:35vh;
+	/*top:2vh;
+    margin-left:425px;
+	margin-top:70px;
+	float:left;
+	
+	width:469px; 
+	height:230px;*/
+	z-index:8;
+ }
+.art1_div:before{
+	z-index:10;
+    content: "";
+    position: absolute;
+    width: 268px;/*光圈长度*/
+    height: 8px;	
+	margin-top:100px;
+    background-color: rgba(255, 255, 255, 0.7);
+	border:none;
+	box-shadow:0 0 22px 22px rgba(255, 255, 255, 0.7);
+	
+	transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+	
+	animation: blink 6s ease infinite;
+    -webkit-animation: blink 6s ease-in 6s infinite;
+}
+@-webkit-keyframes blink { /*扫光特效*/
+    from {left: -140px;top: 0px;}
+    to {left: 300px;top: 0px;}
+}
+@-o-keyframes blink {
+    from {left: -140px;top: 0px;}
+    to {left: 300px;top: 0px;}
+}
+@-moz-keyframes blink {
+    from {left: -140px;top: 0px;}
+    to {left: 300px;top: 0px;}
+}
+@keyframes blink {
+    from {left: -140px;top: 0px;}
+    to {left: 300px;top: 0px;}
+}
+
+.back2_div{ /*圆圆的div*/
+	width:19.5vw; 
+	height:19.5vw; 
+	overflow:hidden; 
+	border:#F5F5F5 4px solid;
+	position:absolute; 
+	bottom:180px; 
+	border-radius:270px;
+}
+#back2_div1{ left:13%;}
+#back2_div3{ left:67%;}
+		/*板块二的div经过事件*/
+		.hover {
+		 	width: 100%;
+			height: 100%;
+			float: left;
+			overflow: hidden;
+			position: relative;
+			cursor: default;
+		}
+		.hover .overlay {
+			 width: 100%;
+			 height: 100%;
+			 position: absolute;
+			 overflow: hidden;
+			 top: 0;
+			 left: 0;
+		}		
+		.hover img {
+			 display: block;
+			 position: relative;
+		}
+
+		.hover h2 {
+			 margin-bottom:0;			
+		  	 text-transform: uppercase;
+			 color: rgba(255, 255, 255, 0.85); 
+			 position: relative;
+			 padding:0.4rem 0;
+			 /*font-size: 17px;*/
+			 font-size:0.9rem; 
+			 font-weight:bold;			  
+			 background: rgba(0, 0, 0, 0.3);
+		}
+		.hover button.info { /*段落字*/
+			 /*font-size:14px;*/
+			 font-size:0.6rem;
+			 line-height:0.9rem;
+			 text-align: left; 
+		  	 display: inline-block;
+		  	 text-decoration: none;
+		  	 text-transform: uppercase;
+		  	 color: #fff;
+		  	 border: 1px solid #fff;  
+		     border-radius: 0px;
+		  	 background-color: transparent;
+		}
+		.hover button.info:hover {
+		     box-shadow: 0 0 5px #fff;
+		}
+		/* styling to remove box shadow and border from buttons for last few effects */
+		.hover button.nullbutton {
+			border: none;
+			padding: 0px;
+			margin: 0px;
+		}
+		.hover button.nullbutton:hover {
+			box-shadow: none;
+		}
+		.ehover11 {
+			background: -webkit-linear-gradient(45deg, #ff89e9 10%, #05abe0 100%);
+			background: linear-gradient(45deg, #ff89e9 10%,#05abe0 100%);
+		}
+		.ehover11 img {
+			max-width: none;
+			width: -webkit-calc(100% + 60px);
+			width: calc(100% + 60px);
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+			transition: opacity 0.35s, transform 0.45s;
+			-webkit-transform: translate3d(-40px,0,0);
+			transform: translate3d(-40px,0,0);
+		}
+		.ehover11 .overlay::before {	
+			border-radius:270px; 
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			bottom: 20px;
+			left: 20px;
+			border: 1px solid #fff;
+			content: '';
+			opacity: 0;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+			transition: opacity 0.35s, transform 0.45s;
+			-webkit-transform: translate3d(-20px,0,0);
+			transform: translate3d(-20px,0,0);
+		}
+		.ehover11 .overlay {
+			/*padding: 3em;	*/
+			padding:2.4rem 2rem;
+		}
+		.ehover11 h2 {
+			background-color: transparent;
+			padding: 0 0 0 0;	
+		}
+		.ehover11 button.info {
+			color: #FFF;
+			opacity: 0;
+			margin: 0px;
+			padding: 0px;
+			border: none;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+			transition: opacity 0.35s, transform 0.45s;
+			-webkit-transform: translate3d(-10px,0,0);
+			transform: translate3d(-10px,0,0);
+		}
+		.ehover11:hover img {
+			opacity: 0.6;
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+		.ehover11:hover .overlay::before,
+		.ehover11:hover button.info {
+			opacity: 1;
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+		/*经过事件结束*/
+	
+/*第二板块国家战略结束*/
+
+/*第二页面新闻开始*/
+.page2{ 
+	width:100%; 
+	height:1200px; 
+	background:url(../pic/page2.jpg) no-repeat; 
+	background-size: 100% 100%; 
+}
+.page2_cap{ 
+	font-family: '微软雅黑', sans-serif;
+	font-weight: bold;
+	font-size: 30px; 
+	position:relative; 
+	left:40%; 
+	top:10%;
+	color: #808080; 
+	width:255px; 
+	height:190px;
+}
+.news{ 
+	width:80%; 
+	height:700px; 
+	border-top:#F91C32 2px solid;
+	position:relative; 
+	left:10%; 
+	top:10%; 
+}
+.news ul{ 
+	width:230px; 
+	height:700px; 
+	float:left; 
+}
+.news li{
+	width:230px; 
+	height:100px; 
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#f6f6f8), to(#DCDCDC)); 
+	background-size:70% 100%;/*谷歌*/ 
+	font-size:18px; 
+	font:bold; 
+	color: #808080; 
+	line-height:100px; 
+	cursor: pointer;
+	font-family: '微软雅黑', sans-serif; 
+	overflow:auto;
+	position:relative;
+	z-index:9;
+	transition: all 0.5s;
+}
+.news li:hover{
+	width:245px;
+	background:url(pic/page2_liBack1.png) no-repeat; 
+	background-size:100% 100%;
+}
+.news_news{ 
+	width:97%; 
+	position:relative; 
+	height:180px; 
+	float:right; 
+	padding-top:25px; 
+	padding-bottom:15px; 
+	border-bottom:#BEBEBE 1px dashed;
+	cursor: pointer; 
+	line-height:25px; 
+	
+}
+.news_news h1{    
+	font-size: 18px;
+    color: #4c4c4c;
+    font-weight: bold; 
+	margin-bottom:18px;
+}
+.news_news p{    
+	font-size: 16px;
+    
+}
+.news_news i{ 
+	float:right;
+	font-size: 16px;
+}	
+/*第二页面新闻结束*/

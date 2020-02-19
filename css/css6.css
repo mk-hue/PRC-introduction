@@ -1,0 +1,156 @@
+.back6{ 
+	width:100%; 
+	height:100vh; 
+	background:url(../pic/back6.jpg) no-repeat; 
+	background-size:100% 100%;
+	background-attachment:fixed; 
+}
+.back6_picAll{ 
+	width:40vw;
+	height:inherit;
+	border-radius:10px;
+}
+.back6_pic1{
+	background:url(../pic/hero1.jpg) no-repeat; 
+	background-size:100% 100%;
+	}
+.back6_pic2{
+	background:url(../pic/hero3.jpg) no-repeat; 
+	background-size:100% 100%;
+	}
+.back6_pic3{
+	background:url(../pic/hero2.jpg) no-repeat; 
+	background-size:100% 100%;
+	}
+.back6_pic4{
+	background:url(../pic/hero4.jpg) no-repeat; 
+	background-size:100% 100%;
+	}
+.back6_font{
+	width:30vw;
+	height:inherit;
+	display:inline-block; 
+	padding-top:12%; 
+	position:relative;
+	}
+.back6_font h1{ 
+	width:44%; 
+	display:block;
+	margin:0 auto; 
+	font-size:1.5rem; 
+	margin-bottom:10%/* position:absolute; */
+}
+.back6_font span{
+	display:block; 
+	font-size:0.9rem; 
+	line-height:1.2rem; 
+	width:85%; 
+	position:absolute; 
+	left:7%;
+	}
+.back6_white{ 
+	width:80vw; 
+	height:80vh; 
+	background-color:rgba(255,255,255,0.6); 
+	position:absolute;
+	left:10vw; 
+	top:14vh; 
+	border-radius:10px;
+}
+.cube-container { /*整个立方体*/
+  /*width: 100vw;
+  height: 100vh;*/
+  width:43vw; height:65vh;
+  position: relative; 
+  left:25%; top:10%;
+  /*left:30vw; top:20vh;*/
+  perspective:50vw;
+  /*background: #222;
+ background-color:(255,255,255,0.7);*/
+}
+.wrap{ position:relative;}
+#cube {
+  /*width: 100vw;
+  height: 100vh;*/
+  width:43vw; height:65vh;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+#cube figure {
+  margin: 0;
+  /*width: 100vw;
+  height: 100vh;*/
+  width:43vw; height:65vh;
+  display: flex;
+  position: absolute;
+  /*background: #222;*/
+  color: white;
+}
+#cube figure div {
+  height: inherit;
+  background-size: cover;
+  background-position: center;
+}
+
+#cube .front { /*毛泽东*/
+  transform: rotateY(0deg) translateZ(50vw);
+  background:rgba(160,173,179,0.9);
+  border-radius:10px;
+}
+
+#cube .back { /*刘少奇*/
+  transform: rotateY(180deg) translateZ(50vw);
+  background:rgba(204,205,213,0.9);
+  border-radius:10px;
+}
+
+#cube .right { /*周恩来*/
+  transform: rotateY(90deg) translateZ(50vw);
+   background:rgba(206,180,152,0.9);
+   border-radius:10px;
+}
+
+#cube .left {  /*朱德*/
+  transform: rotateY(-90deg) translateZ(50vw);
+  background:rgba(155,156,206,0.9);
+  border-radius:10px;
+}
+
+#cube {
+  transform: translateZ(-50vw);
+}
+
+#cube {
+  transition: transform 1.5s ease-in-out;
+}
+
+.button-wrap { /*两个按钮往上移*/
+  position: absolute;
+  bottom: 9%;
+  right: 9%;
+  
+}
+.back6_pre, .back6_next{ /*按钮*/
+	width:45px; 
+	height:35px; 
+	border-radius:5px;
+	background-color:#6F6FFF; 
+	padding-left:13px; 
+	padding-top:8px; 
+	color:#fff; 
+	cursor:pointer; 
+	box-shadow:#DAD8FE 4px; 
+	font-size:17px;
+}
+
+article {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+article img {
+  max-height: 150px;
+}
+
+

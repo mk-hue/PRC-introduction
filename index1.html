@@ -1,0 +1,828 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>指尖风暴</title>
+	<meta name="author" content="Antonio Pratas">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″ />
+    
+    <link rel="stylesheet" href="css/css1.css">	
+    <link rel="stylesheet" href="css/css2.css">	
+    <link rel="stylesheet" href="css/css3.css">	
+    <link rel="stylesheet" href="css/css4.css">
+    <link rel="stylesheet" href="css/css5.css">
+    <link rel="stylesheet" href="css/css6.css">
+    
+    <link rel="stylesheet" href="bootstrap-4.1.1-dist/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />    
+    
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <!-- 预加载cdnjs的文件，提高网页加载速度 -->
+  
+	<script src="jQuery/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="jQuery/jq1.js"></script>
+    <script >
+		function send(){
+        	alert("发送成功！");
+            var receiver = "751158210@qq.com";
+            var subject = "联系我们";
+            var cc=form-control_2.value;
+            var body = t-area.value;
+            var url = "mailto:" + receiver + "?cc=" +cc + "&subject="+subject+"&body=" + body;
+            alert("发送成功！");
+        }
+		$(function(){
+			$(".back1").hide();         		
+			$("#back2").hide();				
+			$(".com").hide();
+			$(".back6").hide();
+			$(".back5").hide();		      	
+      $("#box_sci ").hide(); 
+			/*$(".news li img").hide();*/
+					
+			
+			$(".page2").show();	
+		});
+	</script>
+ 
+	<style>		
+.inp{ width:180px;/*position:absolute; */ height:35px; float:right;}
+.com_back{width:5vh; height:5vh; position:absolute; bottom:1%; right:0; border-radius:50%; background-color:rgba(64,148,253,0.7); color:#fff; text-align:center; line-height:5vh; cursor:pointer; display:none; font-size:0.8rem;
+	animation:mymove1 3s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+	
+	/* Safari and Chrome */
+	-webkit-animation:mymove1 3s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function: ease-in-out;			
+}
+/*浮窗上下飘动*/
+@keyframes mymove1 
+{
+	0%{
+		transform: translateX(0);
+	}
+	50%{				
+		transform: translateX(-15px);
+	}
+	/*from {bottom:50px; }
+	to {bottom:100px; }*/
+}
+/* Safari and Chrome */
+@-webkit-keyframes mymove1 
+{
+	0%{
+		transform: translateX(0);
+	}
+	50%{				
+		transform: translateX(-15px);
+	}
+	
+}
+
+@media screen and (min-width: 1605px) { html, body { font-size: 170%;} }
+@media screen and (min-width: 1524px) and (max-width: 1604px) { html, body { font-size: 160%;} }
+
+@media screen and (min-width: 1443px) and (max-width: 1523px) { html, body { font-size: 150%;} }
+@media screen and (min-width: 1362px) and (max-width: 1442px) { html, body { font-size: 140%;} }
+
+
+@media screen and (min-width: 1271px) and (max-width: 1361px) { html, body { font-size: 130%;} }
+@media screen and (min-width: 1200px) and (max-width: 1270px) { html, body { font-size: 120%;} 
+.inp{ display:none;}
+}
+
+@media screen and (min-width: 1160px) and (max-width: 1199px) { 
+html, body { font-size: 110%;} 
+.inp{ display:none;}
+}
+@media screen and (min-width: 1079px) and (max-width: 1159px) { 
+html, body { font-size: 100%;} 
+.inp{ display:none;}
+}
+@media screen and (min-width: 721px) and (max-width: 1079px) { 
+html, body {font-size: 85%; }
+.inp{ display:none; }
+}
+@media screen and (min-width: 640px) and (max-width: 720px) { 
+html, body { font-size: 60%; }
+.inp{ display:none; }
+}
+@media screen and (min-width: 540px) and (max-width: 639px) { 
+html, body { font-size: 20%; } 
+.inp{ display:none;}
+}
+@media screen and (min-width: 480px) and (max-width: 539px) { 
+html, body { font-size: 30%; } 
+.inp{ display:none;}
+}
+@media screen and (min-width: 320px) and (max-width: 479px) { 
+html, body { font-size: 12%; } 
+.inp{ display:none;}
+}
+/*.form-control{ width:33.5%;}
+.input-group {width:27%;}*/
+/*@media (min-width:200px) and (max-width:768px) { 
+}
+@media (min-width:768px) and (max-width: 2000px) { 
+}*/
+	</style> 
+	
+</head>
+
+<body>
+	<header class="large" ><!--导航-->
+		<nav>        	
+                <img class="logo" src="pic/logo.png"/><!--白色小logo-->
+               
+                <ul class="top1_ul">
+                    <li><a href="#" id="nav1">首页</a></li>
+                  <li><a href="#" id="nav2">国家战略</a></li>
+                  <li><a href="#" id="nav3">科技兴国</a></li>
+                  <li><a href="#" id="nav6">开国元勋</a></li>
+                  <li><a href="#" id="nav4">筑梦未来</a></li>
+                  <li><a href="#" id="nav5">联系我们</a></li>               
+              </ul>
+               <div class="input-group inp"><!--搜索小栏-->
+                     <input type="text" class="form-control" placeholder="搜 索">
+                     <span class="input-group-btn ">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+                           
+	  </nav>
+	</header>
+    
+    
+   <div class="page2"> <!--第二个页面开始-->
+  	<div class="page2_cap" style="background:url(pic/page2_cap.png) no-repeat; background-size:100% 100%;"></div>
+    <div class="news"><!--新闻大框-->
+    
+    	<ul><!--新闻左边的导航-->
+        	<li class="jiaobiao" style="padding-left:50px;" id="news_left1">
+            	一带一路新闻
+            </li>
+            <li style="padding-left:35px;" id="news_left2">
+            	京津冀协同发展新闻
+            </li>
+            <li style="padding-left:50px;" id="news_left3">
+            	长江经济带新闻
+             </li>
+        </ul>          
+                       
+            <div class="card" data-tabulation style="background:rgba(255,255,255,0.6);" id="yidai"><!--一带一路分页栏-->  
+        					
+                <div class="card-body">
+                    <div data-tabulation-tab><!--一带一路分页栏第一页-->  
+                         <div class="news_news" style="margin-top:-20px; "> <!--新闻右边的div-->      	
+                              <h1>【丝路新闻摘要】2019年5月16日：“陆海新通道”扩围西部九省区市</h1>
+                              <p>重庆、广西、贵州、甘肃、青海、新疆、云南等16日在重庆共同签署合作共建“陆海新通道”协议，标志着陕西正式加入现有的“陆海新通道”共建合作机制。“陆海新通道”的“朋友圈”扩大到中国西部九省区市。</p>
+                              <i>2019-05-16</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>韩正出席第十二届阿斯塔纳经济论坛和第二届中哈地方合作论坛部九省区市</h1>
+                              <p>5月14日至16日，中共中央政治局常委、国务院副总理韩正应邀赴哈萨克斯坦出席第十二届阿斯塔纳经济论坛和第二届中国－哈萨克斯坦地方合作论坛，并会见总统托卡耶夫。</p>
+                              <i>2019-05-17</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>西部九省区市签约合作共建“陆海新通道”</h1>
+                              <p>5月16日，在第二届中国西部国际投资贸易洽谈会（简称“西洽会”）开幕式上，重庆、广西、贵州、甘肃、青海、新疆、云南、宁夏、陕西人民政府共同签署合作共建“陆海新通道”协议。</p>
+                              <i>2019-05-16</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>外交部回应巴西期待参与共建“一带一路”：欢迎</h1>
+                              <p>莫朗副总统13日接受媒体采访时表示，巴西对“一带一路”倡议抱有期待，愿听取中方合作建议。外交部发言人耿爽15日对此回应表示，对巴西参与共建“一带一路”持开放和欢迎态度。</p>
+                              <i>2019-05-16</i>          
+                           </div>
+                    </div><!--一带一路分页栏第一页结束-->  
+                    <div data-tabulation-tab><!--一带一路分页栏第二页开始--> 
+                    	 <div class="news_news" style="margin-top:-20px; "> 
+                              <h1>亚洲文明对话大会六场平行分论坛举行</h1>
+                              <p>亚洲文明对话大会六场平行分论坛15日在北京举行，相关国家官员、专家学者和相关人士在分论坛上进行了交流、讨论。</p>
+                              <i>2019-05-16</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>2019年5月15日：印尼雅万高铁贯通隧道</h1>
+                              <p>由中国中铁三局集团有限公司承建的印度尼西亚雅加达－万隆高铁项目瓦利尼隧道14日贯通，标志着雅万高铁建设取得阶段性重要进展，为全线加速建设奠定了坚实基础。</p>
+                              <i>2019-05-15</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>中国银行与巴布亚新几内亚政府签署谅解备忘录</h1>
+                              <p>4月26日，中国银行行长刘连舸与巴布亚新几内亚外交与贸易部部长伦宾克·帕托在北京签署《中国银行关于在巴设立代表处的谅解备忘录》。</p>
+                              <i>2019-05-15</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>中国银行累计跟进逾600个 “一带一路”沿线项目</h1>
+                              <p>“一带一路”倡议提出以来，中国银行累计跟进逾600个沿线项目，提供各类授信支持超过1300亿美元；首创中小企业跨境撮合服务。</p>
+                              <i>2019-05-15</i>          
+                           </div>                   
+                    </div><!--一带一路分页栏第二页结束--> 
+                    
+                    <div data-tabulation-tab><!--一带一路分页栏第三页开始--> 
+                    	<div class="news_news" style="margin-top:-20px; "> 
+                              <h1>“一带一路”牵线 蒙古国水煮牛肉中国市场渐走俏</h1>
+                              <p>“在众多的国际食品中，蒙古国水煮牛肉在中国满洲里很有市场，逐渐走俏……”13日，家住内蒙古自治区满洲里市的尹班表示，“身边很多朋友都特别爱吃蒙古国正宗的水煮牛肉。”</p>
+                              <i>2019-05-15</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>【丝路新闻摘要】2019年5月14日：巴西期待加入“一带一路”</h1>
+                              <p>俄塔社称，巴西期待中国邀请巴西加入“一带一路”倡议。据路透社此前报道，莫朗将于16日开始访问中国。莫朗称希望在访华期间能够收到中方的邀请，除了参加中巴高委会外，这是他此次访华的主要目标之一。</p>
+                              <i>2019-05-14</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>“亚洲文化展演”在京启幕 多国艺术家同场炫技</h1>
+                              <p>“亚洲文化展演”开幕式演出《亚洲芭蕾之夜》14日晚在北京天桥艺术中心上演。来自韩国、菲律宾、中国的艺术家同场炫技，为观众呈现《天鹅湖》《堂·吉诃德》《海盗》等古典芭蕾精华舞段。</p>
+                              <i>2019-05-14</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>中哈首部合拍故事片《音乐家》将映 讲述冼星海的最后岁月</h1>
+                              <p>近日，中国人民银行与新加坡金融管理局续签了双边本币互换协议，旨在促进双边贸易和投资以发展两国经济，为市场提供短期流动性以稳定金融市场。协议规模为3000亿元人民币/610亿新加坡元。</p>
+                              <i>2019-05-14</i>          
+                           </div>                   	
+                    </div><!--一带一路分页栏第三页结束--> 
+                    
+                    <div data-tabulation-tab><!--一带一路分页栏第四页开始--> 
+                    	<div class="news_news" style="margin-top:-20px; "> 
+                              <h1>哈萨克斯坦等国组建成立突厥语国家工商会</h1>
+                              <p>17日，哈萨克斯坦阿塔梅肯国家企业家协会董事长梅尔扎赫梅多夫、阿塞拜疆国家企业家联合会主席穆萨耶夫、土耳其商会和商品交易所联盟主席希萨尔吉克尼奥卢在努尔苏丹共同签署了新的突厥语国家工商会章程。</p>
+                              <i>2019-05-18</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>汉堡-上海大巴丝路行揭幕德国“中国旅游文化周”</h1>
+                              <p>17日，52位来自欧洲不同国家的文化使者们乘坐两辆豪华大巴从德国汉堡启程，沿古丝绸之路前往中国上海。该活动标志着2019年德国“中国旅游文化周”正式拉开帷幕。</p>
+                              <i>2019-05-18</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>巴基斯坦官员：坚决为中巴经济走廊建设保驾护航</h1>
+                              <p>“巴基斯坦和中国关系源远流长，中巴经济走廊是巴中友谊的生动写照，巴基斯坦坚决确保走廊建设不受任何安全威胁。”巴基斯坦三军新闻局局长阿西夫·加富尔16日在伊斯兰堡接受记者采访时说。</p>
+                              <i>2019-05-18</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>中哈合拍影片《音乐家》在哈萨克斯坦首映</h1>
+                              <p>中国与哈萨克斯坦首部合拍电影《音乐家》17日在哈首都努尔苏丹举行在哈首映典礼。包括哈文化体育部长穆哈梅季乌勒、中国驻哈大使张霄在内的逾2000人参加典礼并观影。</p>
+                              <i>2019-05-14</i>          
+                           </div>
+                        
+                    </div><!--一带一路分页栏第四页结束--> 
+                    <div data-tabulation-tab><!--一带一路分页栏第五页开始--> 
+                    	<div class="news_news" style="margin-top:-20px; "> 
+                              <h1>“亚洲文化展演”在京启幕 多国艺术家同场炫技</h1>
+                              <p>“亚洲文化展演”开幕式演出《亚洲芭蕾之夜》14日晚在北京天桥艺术中心上演。来自韩国、菲律宾、中国的艺术家同场炫技，为观众呈现《天鹅湖》《堂·吉诃德》《海盗》等古典芭蕾精华舞段。</p>
+                              <i>2019-05-15</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>【丝路新闻摘要】2019年5月14日：巴西期待加入“一带一路”</h1>
+                              <p>俄塔社称，巴西期待中国邀请巴西加入“一带一路”倡议。据路透社此前报道，莫朗将于16日开始访问中国。莫朗称希望在访华期间能够收到中方的邀请，除了参加中巴高委会外，这是他此次访华的主要目标之一。</p>
+                              <i>2019-05-14</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>“一带一路”牵线 蒙古国水煮牛肉中国市场渐走俏</h1>
+                              <p>“在众多的国际食品中，蒙古国水煮牛肉在中国满洲里很有市场，逐渐走俏……”13日，家住内蒙古自治区满洲里市的尹班表示，“身边很多朋友都特别爱吃蒙古国正宗的水煮牛肉。”</p>
+                              <i>2019-05-14</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>中哈首部合拍故事片《音乐家》将映 讲述冼星海的最后岁月</h1>
+                              <p>近日，中国人民银行与新加坡金融管理局续签了双边本币互换协议，旨在促进双边贸易和投资以发展两国经济，为市场提供短期流动性以稳定金融市场。协议规模为3000亿元人民币/610亿新加坡元。</p>
+                              <i>2019-05-14</i>          
+                           </div> 
+                    	
+                    </div><!--一带一路分页栏第五页结束--> 
+                </div>
+                    
+                <div class="card-footer"><!--页码--> 
+                
+                <a href="#" class="btn btn-info" data-tabulation-nav="next" style="float:right;">下一页</a>
+				<a href="#" class="btn btn-light" data-tabulation-nav="5" style="float:right;">5</a>
+				<a href="#" class="btn btn-light" data-tabulation-nav="4" style="float:right;">4</a>
+				<a href="#" class="btn btn-light" data-tabulation-nav="3" style="float:right;">3</a>
+				<a href="#" class="btn btn-light" data-tabulation-nav="2" style="float:right;">2</a>
+ 				<a href="#" class="btn btn-light" data-tabulation-nav="1" style="float:right;">1</a>
+				 <a href="#" class="btn btn-info" data-tabulation-nav="prev" style="float:right;">上一页</a>
+                                        
+                    
+                 </div>
+                
+		</div><!--分页栏结束-->  
+        	
+              
+              
+               <div class="card" data-tabulation style="background:rgba(255,255,255,0.6); display:none;" id="jingjin"><!--京津冀分页栏-->  
+        					
+                <div class="card-body">
+                    <div data-tabulation-tab><!--京津冀分页栏第一页-->  
+                         <div class="news_news" style="margin-top:-20px; "> <!--新闻右边的div-->      	
+                              <h1>2019年河北区京津冀协同发展招商大会召开签约协议额超过160亿元</h1>
+                              <p>5月13日，由河北区政府主办的“遇见河北、遇见不凡”暨2019年河北区京津冀协同发展招商大会在北宁文化创意设计中心成功举办。智能科技、地产领域等行业龙头、领军企业负责人100余人应邀出席。</p>
+                              <i>2019-05-17</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>助力“京津冀”一体化腾飞 银行业展现“金融速度”</h1>
+                              <p>5月13日，大兴机场首次真机试飞圆满完成，让大众对这座即将在年内开放使用的新机场更加关注。在其建设的背后，离不开银行业的支持。</p>
+                              <i>2019-05-16</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>京津冀区域协同稳步推进 重点领域成效明显</h1>
+                              <p>据北京市统计局数据显示，2018年，京津冀地区生产总值为85139.9亿元，与2014年相比，按可比价格计算，年均增长6.6%。</p>
+                              <i>2019-05-16</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>“梦想成真”五月演出季突出京津冀协同发展特色</h1>
+                              <p>第六届“梦想成真”五月演出季9日开幕。两个月内，北京演艺集团、天津北方演艺集团、河北演艺集团的20台节目将在北京12家剧场演出46场，其中不乏《天路》《日出》等名剧。</p>
+                              <i>2019-05-16</i>          
+                           </div>
+                    </div><!--京津冀分页栏第一页结束-->  
+                    <div data-tabulation-tab><!--京津冀分页栏第二页开始--> 
+                    	 <div class="news_news" style="margin-top:-20px; "> 
+                              <h1>亚洲文明对话大会六场平行分论坛举行</h1>
+                              <p>亚洲文明对话大会六场平行分论坛15日在北京举行，相关国家官员、专家学者和相关人士在分论坛上进行了交流、讨论。</p>
+                              <i>2019-05-16</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>京津冀协同发展加速推进 “一基地三区”首批项目完成过半</h1>
+                              <p>从天津市发改委获悉，天津紧紧围绕建设全国先进制造研发基地、北方国际航运核心区、金融创新运营示范区、改革开放先行区“一基地三区”功能定位，主动谋划、积极作为，构建项目化清单化支撑体系。</p>
+                              <i>2019-05-12</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>中国银行与巴布亚新几内亚政府签署谅解备忘录</h1>
+                              <p>4月26日，中国银行行长刘连舸与巴布亚新几内亚外交与贸易部部长伦宾克·帕托在北京签署《中国银行关于在巴设立代表处的谅解备忘录》。</p>
+                              <i>2019-05-15</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>中国银行累计跟进逾600个 “一带一路”沿线项目</h1>
+                              <p>“一带一路”倡议提出以来，中国银行累计跟进逾600个沿线项目，提供各类授信支持超过1300亿美元；首创中小企业跨境撮合服务。</p>
+                              <i>2019-05-15</i>          
+                           </div>                   
+                    </div><!--京津冀分页栏第二页结束--> 
+                    
+                    <div data-tabulation-tab><!--京津冀分页栏第三页开始--> 
+                    	<div class="news_news" style="margin-top:-20px; "> 
+                              <h1>“亚洲文化展演”在京启幕 多国艺术家同场炫技</h1>
+                              <p>“亚洲文化展演”开幕式演出《亚洲芭蕾之夜》14日晚在北京天桥艺术中心上演。来自韩国、菲律宾、中国的艺术家同场炫技，为观众呈现《天鹅湖》《堂·吉诃德》《海盗》等古典芭蕾精华舞段。</p>
+                              <i>2019-05-15</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>【丝路新闻摘要】2019年5月14日：巴西期待加入“一带一路”</h1>
+                              <p>俄塔社称，巴西期待中国邀请巴西加入“一带一路”倡议。据路透社此前报道，莫朗将于16日开始访问中国。莫朗称希望在访华期间能够收到中方的邀请，除了参加中巴高委会外，这是他此次访华的主要目标之一。</p>
+                              <i>2019-05-14</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>“一带一路”牵线 蒙古国水煮牛肉中国市场渐走俏</h1>
+                              <p>“在众多的国际食品中，蒙古国水煮牛肉在中国满洲里很有市场，逐渐走俏……”13日，家住内蒙古自治区满洲里市的尹班表示，“身边很多朋友都特别爱吃蒙古国正宗的水煮牛肉。”</p>
+                              <i>2019-05-14</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>中哈首部合拍故事片《音乐家》将映 讲述冼星海的最后岁月</h1>
+                              <p>近日，中国人民银行与新加坡金融管理局续签了双边本币互换协议，旨在促进双边贸易和投资以发展两国经济，为市场提供短期流动性以稳定金融市场。协议规模为3000亿元人民币/610亿新加坡元。</p>
+                              <i>2019-05-14</i>          
+                           </div>
+                    	
+                    </div>
+                    <div data-tabulation-tab>Tab #4</div>
+                    <div data-tabulation-tab>Tab #5</div>
+                </div>
+                    
+                <div class="card-footer"><!--页码--> 
+                
+                <a href="#" class="btn btn-info" data-tabulation-nav="next" style="float:right;">下一页</a>				
+				<a href="#" class="btn btn-light" data-tabulation-nav="3" style="float:right;">3</a>
+				<a href="#" class="btn btn-light" data-tabulation-nav="2" style="float:right;">2</a>
+ 				<a href="#" class="btn btn-light" data-tabulation-nav="1" style="float:right;">1</a>
+				 <a href="#" class="btn btn-info" data-tabulation-nav="prev" style="float:right;">上一页</a>
+                                        
+                    
+                 </div>
+                
+		</div><!--京津冀分页栏结束-->  
+              
+               <div class="card" data-tabulation style="background:rgba(255,255,255,0.6); display:none;" id="changjiang"><!--长江分页栏-->  
+        					
+                <div class="card-body">
+                    <div data-tabulation-tab><!--长江分页栏第一页-->  
+                         <div class="news_news" style="margin-top:-20px; "> <!--新闻右边的div-->      	
+                              <h1>三峡宜昌“银企联盟”助推长江经济带绿色发展</h1>
+                              <p>中新网宜昌5月10日电 (董晓斌 向介民 徐祥凯)“三峡门户”湖北宜昌市10日举行绿色发展十大战略性举措银企对接会，以促进金融与战略对接、产业对接、项目对接，推动长江经济带高质量发展。</p>
+                              <i>2019-05-18</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>长江经济带绿色发展 专项中央预算内投资范围明确</h1>
+                              <p>国家发展改革委网站8日消息，国家发展改革委日前印发关于修订《长江经济带绿色发展专项中央预算内投资管理暂行办法》（以下简称“暂行办法”）的通知，对专项中央预算内投资的支持范围和补助标准等作出明确。</p>
+                              <i>2019-05-17</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>德安“五大工程”助推长江经济带“共抓大保护”</h1>
+                              <p>近日，德安县制定了长江经济带“共抓大保护”攻坚行动方案，将坚持“生态优先、绿色发展”战略定位，深入推进水资源保护、水污染治理、生态修复与保护、城乡环境综合治理、绿色产业发展等五大工程。</p>
+                              <i>2019-05-15</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>国开行：在长江经济带贷款余额约4万亿元</h1>
+                              <p>截至3月末，国开行在长江经济带本外币贷款余额已达约4万亿元。据了解，这些贷款重点支持了长江生态保护和修复、基础设施互联互通、产业转型升级和新旧动能转换等领域重大项目。</p>
+                              <i>2019-05-12</i>          
+                           </div>
+                    </div><!--长江分页栏第一页结束-->  
+                    <div data-tabulation-tab><!--长江分页栏第二页开始--> 
+                    	 <div class="news_news" style="margin-top:-20px; "> 
+                              <h1>抓好重点领域环节 国开行助推长江经济带绿色发展</h1>
+                              <p>推动长江经济带发展是关系国家发展全局的重大战略，国开行坚持做好生态修复、环境保护、绿色发展“三篇文章”，助推长江经济带发展战略的实施。</p>
+                              <i>2019-05-01</i>        
+                          </div>
+                            
+                          <div class="news_news">      	
+                              <h1>加快黄冈长江经济带建设的对策思考</h1>
+                              <p>长江流经黄冈全境200余公里。建设黄冈长江经济带就是建设黄冈，抓项目建设就是抓长江经济带建设。</p>
+                              <i>2019-04-25</i>          
+                          </div>
+                          <div class="news_news">      	
+                              <h1>国开行4万亿元贷款支持长江经济带发展</h1>
+                              <p>5月8日，中国证券报记者从国家开发银行获悉，截至2019年3月末，国开行在长江经济带11省市本外币贷款余额约4万亿元，重点支持长江生态保护和修复、产业转型升级和新旧动能转换等领域重大项目。</p>
+                              <i>2019-04-24</i>          
+                           </div>
+                           <div class="news_news">     	
+                              <h1>共商长江经济带高质量发展，“长江高端智库对话”开幕</h1>
+                              <p>4月22日上午，由中国社会科学院、湖北省人民政府共同举办的“长江高端智库对话”开幕，国家及省市智库平台专家学者、长江流域11省（市）政府部门负责同志等400余人汇聚武汉。</p>
+                              <i>2019-04-23</i>          
+                           </div>                   
+                    </div><!--长江分页栏第二页结束--> 
+                                                         
+                </div>
+                    
+                <div class="card-footer"><!--页码--> 
+                
+                <a href="#" class="btn btn-info" data-tabulation-nav="next" style="float:right;">下一页</a>								
+				<a href="#" class="btn btn-light" data-tabulation-nav="2" style="float:right;">2</a>
+ 				<a href="#" class="btn btn-light" data-tabulation-nav="1" style="float:right;">1</a>
+				 <a href="#" class="btn btn-info" data-tabulation-nav="prev" style="float:right;">上一页</a>               
+                 </div>
+                
+		</div><!--长江分页栏结束-->  
+      
+    </div> <!--新闻大框结束-->
+  </div> <!--第二个页面结束-->   
+    
+  <!--首页-->
+  <div class="back1">
+  	<!--视频-->
+    <video controls loop autoplay muted width="100%" height="auto" class="vid">       
+   		 <source src="pic/video1.mp4" type="video/mp4">     
+    </video>
+     <img src="pic/tianan0.png" id="tian0"><!--高清天安门-->
+     <div class="site-logo"><img src="pic/logo1.png" id="logo1"></div><!--盛世华诞-->
+    <img src="pic/bird1.png" id="bird"><!--白鸽-->
+        
+     <div class="flow" ><!--浮窗-->
+     	<img src="pic/flow.png" width="90px" height="90px">
+     </div>
+  </div><!--首页结束-->
+  
+  <!--第二页-->
+   <div class=" container-fluid" id="back2">
+  	<div class="art1_div"><img src="pic/art1.png" class="art1"></div> 
+     			
+   		<!-- <div class="back2_div" style="left:10%"></div>
+    	 <div class="back2_div" style="left:40%" ></div>
+   		 <div class="back2_div" style="left:70%" ></div>  -->
+         
+         <!--第一个div-->
+        <div class="back2_div" id="back2_div1">
+         <div class="hover ehover11">
+            <img class="img-responsive" src="pic/back2_div1.jpg" alt="" style="width:30vw; height:20vw;">
+                <div class="overlay" style="text-align:center;">
+                    <h2>一带一路</h2>
+                    <a href="index1.html" target="new"><button class="info nullbutton" data-toggle="modal" data-target="#modal11"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一带一路是"丝绸之路经济带"和"21世纪海上丝绸之路"的简称,2013年由习近平提出建设"新丝绸之路经济带"和"21世纪海上丝绸之路"的合作倡议。
+                    </button></a>
+                 </div>
+          </div>
+		</div> 
+         <!--第二个div-->
+         <div class="back2_div" style="left:40%;">
+         <div class="hover ehover11">
+            <img class="img-responsive" src="pic/back2_div2.jpg" alt="" style="width:30vw; height:20vw;">
+                <div class="overlay" style="text-align:center;">
+                    <h2>京津冀协同发展</h2>
+                    <a href="index1.html" target="new"><button class="info nullbutton" data-toggle="modal" data-target="#modal11"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心是京津冀三地作为一个整体协同发展，要以疏解非首都功能、解决北京“大城市病”为基本出发点，调整优化城市布局和空间结构。
+                    </button></a>
+                 </div>
+          </div>
+		</div> 
+        <!--第三个div-->
+         <div class="back2_div" id="back2_div3">
+         <div class="hover ehover11">
+            <img class="img-responsive" src="pic/back2_div3.jpg" alt="" style="width:30vw; height:20vw;">
+                <div class="overlay" style="text-align:center;">
+                    <h2>长江经济带</h2>
+                    <a href="index1.html" target="new"><button class="info nullbutton" data-toggle="modal" data-target="#modal11"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长江经济带覆盖上海、江苏、湖北、湖南、重庆等11省市，面积约205万平方公里，占全国的21%，人口和经济总量均超过全国的40%。
+                    </button></a>
+                 </div>
+          </div>
+		</div> 
+         
+  </div><!--第二个板块结束-->
+  
+  
+  	<div class="box" id="box_sci" ><!--第三板块科技强国开始-->
+		
+			<div id="top_left" class="top"></div> <!--艺术字-->
+			
+            <div style="width:100vw; height:100vh; position:absolute;"><!--轮播图与新闻的框开始-->
+                <div id="top_mid" class="top"> <!--轮播图-->
+    
+                    <ul class="ul-1"><!--图片区域-->
+                        <li class="li-1 active" ></li>
+                        <li class="li-1" ></li>
+                        <li class="li-1" ></li>
+                    </ul>       
+    
+                   <button type="button" class="button_big" id="btn-pre"><</button>
+                   <button type="button" class="button_big" id="btn-next">></button>
+    
+                   <ul id="ul-2"><!--小圈圈区域-->
+                       <li class="circle styles" data-index="0"></li>
+                       <li class="circle" data-index="1"></li>
+                       <li class="circle" data-index="2"></li>
+                  </ul>
+    
+                </div>         
+			
+			<div class="back3_form" >
+        
+        <a target="new" href="http://www.dzwww.com/2018/lh/news/201802/t20180227_17088119.htm">
+        	<div class="back3_form1">
+            <img class="back3_form1_pic" src="pic/天宫2号.jpg" />           
+          		  <div class="back3_form1_font">
+           	 		   <h3>天宫2号：未来空间站的雏形</h3>
+             		   <p>天宫二号空间站，2016年9月15日由酒泉卫星发射中心成功发射，现运行在平均轨道高度约400km的近圆轨道，将于2019年7月之后完成使命。</p>
+        	      </div>        		 
+            </div> <!--style=" font-size:20px; display:inline-block;"-->
+         </a>
+         <a target="new" href="https://baijiahao.baidu.com/s?id=1614434121546972628&wfr=spider&for=pc">
+            <div class="back3_form1">
+            <img class="back3_form1_pic" src="pic/天眼.jpg"/>           
+          		  <div class="back3_form2_font">
+           	 		   <h3>中国天眼：搜寻外星文明</h3>
+             		   <p>中国天眼的建成，具有历史意义。在1994年，中国就有了建立天眼的构想，经过了12年的努力，花费了40亿人民币的，终于在贵州建成。</p>
+        	      </div>          		 
+            </div>
+         </a>
+         <a target="new" href="http://www.sohu.com/a/137272596_632677">
+            <div class="back3_form1">
+           		 <img class="back3_form1_pic" src="pic/蓝鲸2号.jpg" />           
+          		  <div class="back3_form3_font">
+           	 		   <h3>蓝鲸2号：全球最大钻井</h3>
+             		   <p>平台2017年8月22日，中集来福士建造的超深水双钻塔半潜式钻井平台“蓝鲸2号”抵达中集来福士烟台基地深水码头，圆满完成试航任务。</p>
+        	      </div>
+            </div>
+          </a>  
+        </div><!--右边新闻框结束-->
+        </div><!--轮播图与新闻的框结束-->
+
+	</div><!--第三板块科技强国结束-->
+	
+  <div class="back6"><!--第四板块英雄烈士-->
+  	 	<div class="wrap">
+          <div class="back6_white">
+			<section class="cube-container">
+			  <div id="cube">
+              
+			    <figure class="front" > <!--第一张图片毛泽东-->
+			      <div class="back6_picAll back6_pic1"></div>
+			      <div class="back6_font" >						  					    						   
+                     <h1>毛泽东</h1> 
+                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国人民的领袖，马克思主义者，伟大的无产阶级革命家、战略家和理论家，中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人，诗人，书法家。</span>
+                                													    
+			       </div>
+			    </figure>
+                
+			    <figure class="back"> <!--第二张图片刘少奇-->
+			    <div class="back6_picAll back6_pic2"></div>
+			      <div class="back6_font">						  					   
+			        	 <h1>刘少奇</h1> 
+                    	 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;伟大的马克思主义者，伟大的无产阶级革命家、政治家、理论家，党和国家主要领导人之一，中华人民共和国开国元勋，是以毛泽东同志为核心的党的第一代中央领导集体的重要成员。</span>
+						  
+			      </div>
+			    </figure>
+                
+			    <figure class="right"> <!--第三张图片周恩来-->
+			      <div class="back6_picAll back6_pic3"></div>
+			      <div class="back6_font" >
+						  <h1>周恩来</h1> 
+                    	 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;伟大的无产阶级革命家、政治家、军事家、外交家，党和国家主要领导人之一，中国人民解放军主要创建人之一，中华人民共和国的开国元勋，是以毛泽东同志为核心的党的第一代中央领导集体的重要成员。</span>
+			      </div>			        
+                </figure>
+                
+			    <figure class="left"> <!--第四张图片朱德-->
+			      <div class="back6_picAll back6_pic4"></div>
+			      <div class="back6_font">
+						  <h1>朱&nbsp;&nbsp;德</h1> 
+                    	 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;伟大的马克思主义者，无产阶级革命家、政治家和军事家，中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人之一。中华人民共和国十大元帅之首。</span>
+			      </div>
+			    </figure>
+                
+                			    
+			  </div> <!--cube-->
+			</section> <!--cube-container-->
+			  
+              <div class="button-wrap">
+			  	 <div class="previous back6_pre glyphicon glyphicon-chevron-left"></div>
+			  	 <div class="next back6_next glyphicon glyphicon-chevron-right"></div>  
+			  </div>
+        </div>    
+	 </div> <!--wrap-->
+  </div> <!--建国元勋结束-->
+    
+  <div class="com"><!--第五板块筑梦未来-->
+  <img src="pic/back4_logo.png" class="back4_logo">
+  <section class="cd-horizontal-timeline" >
+	<div class="timeline" > <!--整个时间轴-->
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="01/01/2018" class="selected" id="back4_time1">2018</a></li>
+					<li><a href="#0" data-date="01/01/2019" id="back4_time2">2019</a></li>
+					<li><a href="#0" data-date="01/01/2020" id="back4_time3">2020</a></li>
+					<li><a href="#0" data-date="01/01/2021" id="back4_time4">2021</a></li>
+					<li><a href="#0" data-date="01/01/2030" id="back4_time5">2035</a></li>
+					<li><a href="#0" data-date="01/01/2040" id="back4_time6">2050</a></li>
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>			
+              </div> <!-- .events -->
+               <div class="glyphicon glyphicon-chevron-left com_back" ></div><!--新加的按钮-->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+		<ol>
+			<li class="selected" data-date="01/01/2018">
+				<h2>2018:改革开放40周年</h2>
+				<em>1978年12月18日</em>
+				<p>	
+					1978年5月，一篇名为《实践是检验真理的唯一标准》的特约评论员文章，在《光明日报》一版刊发。它掀起了席卷中国的真理标准大讨论，短短六千字，激荡四十年。<br/>
+					40年来，中国经济总量跃居世界第二，综合国力和国际影响力实现历史性跨越。<br/>
+					40年间，中国基础产业和基础设施实现了跨越式发展，供给能力实现了巨大转变。<br/>
+					40年来，人民生活发生翻天覆地的巨大变化。				</p>
+			</li>
+
+			<li data-date="01/01/2019">
+				<h2>2019:中国成立70周年</h2>
+				<em>1949年10月1日</em>
+				<p>	
+					新中国成立70周年，同时也是澳门回归20周年；<br/>
+                    新中国成立70周年，同时也是人民海军、空军建军70周年；<br/>
+                    新中国成立70周年，同时也是五四运动100周年；<br/>
+                    70年风云际会，中国从一个积贫积弱的国家，一跃成为当今世界第二大经济体，综合国力的历史性跨越世人瞩目。新的历史坐标，中国传递出怎样的中国声音，备受世界关注。				</p>
+			</li>
+
+			<li data-date="01/01/2020">
+				<h2 >2020:全面建成小康社会</h2>
+				<em>2002年11月8日</em>
+				<p>	
+					党的十八大报告首次正式提出全面“建成”小康社会。“小康社会”是由邓小平在20世纪70年代末80年代初在规划中国经济社会发展蓝图时提出的战略构想。<br/>
+					2020年全面建成的小康社会，是发展改革成果真正惠及十几亿人口的小康社会，是经济、政治、文化、社会、生态文明全面发展的小康社会，是为实现社会主义现代化建设宏伟目标和中华民族伟大复兴奠定了坚实基础的小康社会。				</p>
+			</li>
+
+			<li data-date="01/01/2021">
+				<h2 >2021:共产党成立100周年</h2>
+				<em>1921年7月1日</em>
+				<p>	
+					1917年俄国十月革命胜利后，马克思主义迅速传遍我国，最早接受马列主义的李大钊，陈独秀等人，相继在各地成立共产主义小组，宣传马列主义，从事工人运动。<br/>
+					在列宁领导的共产国际的积极帮助下，1921年7月各地共产主义小组派出代表到上海召开了中国共产党第一次代表大会。<br/>
+					中国共产党的诞生，开辟了中国历史发展的新时代，使中国革命的面貌焕然一新。				</p>
+			</li>
+
+			<li data-date="01/01/2030">
+				<h2>2035:基本实现社会现代化</h2>
+				<em>2017年10月18日</em>
+				<p>	
+					这一目标的历史脉络来源于社会主义现代化战略,即"三步走"到百年梦想。改革开放以来,中国经济社会快速发展,从而使得提前十五年基本实现社会主义现代化成为可能。<br/>
+					这是我们党适应我国发展实际作出的必然选择，顺应人民对美好生活的新期待，体现了我们党高度的历史担当和使命追求。综合分析国内外的环境和发展条件可以看出，党的十九大确定的到2035年基本实现现代化的奋斗目标是有充分依据的。				</p>
+			</li>
+
+			<li data-date="01/01/2040">
+				<h2>2050:全面建成社会主义强国</h2>
+				<em>2017年10月18日</em>
+				<p>
+					从2035年到本世纪中叶,把我国建成富强民主文明和谐美丽的社会主义现代化强国。这一战略目标和步骤提出的重要意义在于,明确了中华民族伟大复兴和建成社会主义现代化强国的时间表、路线图,充分体现了新时代党中央的大历史观、大时代观和大战略观。<br/>
+					与此前的社会主义现代化目标相比,既有继承性,更有创新性,充分显示了我们党执政理念的延续性和与时俱进,展示了我国社会主义现代化远大目标和宏伟蓝图。				</p>
+			</li>
+		</ol>
+	</div> 
+	<!-- .events-content -->
+</section>
+</div><!--第四板块筑梦结束-->
+
+<div class="back5"><!--第五板块练习我们开始-->
+	<div class="inp1">
+		<div class="inp1_contact"></div>
+
+		<div class="container1">
+            <form >
+
+                <div class="form-group"> 
+                	<div class="input-group"> 
+                		<span class="input-group-addon" id="basic-addon1">
+                			<span class="glyphicon glyphicon-user"></span>
+                		</span> 
+                		<input type="text" class="form-control" placeholder="你的名字" aria-describedby="basic-addon1">
+                	</div>
+                </div>  
+
+                <div class="form-group"> 
+                	<div class="input-group"> 
+                		<span class="input-group-addon" id="basic-addon2">
+                			<span class="glyphicon glyphicon-envelope"></span>
+                		</span> 
+                		<input type="text" class="form-control" placeholder="电子邮箱地址" aria-describedby="basic-addon1" id="form-control_2">
+                    </div>
+                </div> 
+
+                <div class="form-group">
+                     <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">
+                        	<span class="glyphicon glyphicon-earphone"></span>
+                        </span> 
+                        <input type="text" class="form-control" placeholder="电话号码" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+
+                <div class="form-group" id="form-group_4">
+                     <div class="input-group" id="input-group_4">
+                        <span class="input-group-addon" id="basic-addon4">
+                        	<span class="glyphicon glyphicon-pencil"></span>
+                        </span> 
+                        <input type="text" class="form-control" placeholder="信息" aria-describedby="basic-addon3" id="form-control_4"  disabled="disabled" >
+                    </div>
+                    <div class="text"><textarea class="t-area" cols="10" rows="6"></textarea></div>
+                </div>
+                
+                <div class="form-group" id="form-group_5" style="width:120px">
+                     <div class="input-group" id="input-group_5">
+                        <input type="button" style="width:120px" class="form-control" value="发送信息" aria-describedby="basic-addon4" id="form-control_5" onClick="send();"  >
+                    </div>
+                </div>
+
+            </form> 
+        </div>
+	</div>
+</div><!--第五板块联系我们结束-->
+
+
+    
+    <script src="jQuery/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="jQuery/jquery.tabulation.js"></script>
+    <script src="js/js3.js"></script>
+    <script src="js/js4.js"></script>
+    
+    
+	<script type="text/javascript">
+		var counter = 0;
+		$('.next').on('click', function(){
+		  counter -= 90;
+		  var rotation = 'translateZ( -50vw ) rotateY( ' + counter + 'deg )';
+		  $('#cube').css('transform', rotation);
+		});
+		$('.previous').on('click', function(){
+		  counter += 90;
+		  var rotation = 'translateZ( -50vw ) rotateY( ' + counter + 'deg )';
+		  $('#cube').css('transform', rotation);
+		});
+	</script>
+    
+	<script>
+		$('.js-tabulation1').tabulation({
+			navigation: {
+				active: {
+					class: 'tabulation-active-button1'
+				}
+			}
+		});
+		$('.js-tabulation2').tabulation({
+			navigation: {
+				active: {
+					class: 'btn-light'
+				}
+			},
+			tabulation: {
+				active: {
+					class: 'tab-active'
+				}
+			}
+		});
+	</script>
+</body>
+</html>
